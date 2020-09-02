@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+.wrap{
+      width: 1024px;
+      height: 100%;
+      margin: 0 auto;
+      border: 1px solid gray;
+}
+.top{
+    height: 300px;
+    background: #4a4a4a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top img{
+  width: 117px;
+  height: 117px;
+}
+.top .bmi{
+  display: flex;
+  flex-direction: column;
+}
+.top .bmi label{
+  font-family: AppleSystemUIFont;
+  font-size: 18px;
+  color: #FFD366;
+  margin-bottom: 3px;
+}
+.top .bmi input{
+  width: 250px;
+  height: 40px;
+  background: rgba(255,255,255,0.18);
+  border: 2px solid #FFD366;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.top .result{
+  width: 300px;
+  height: 120px;
+  position: relative;
+  display: flex;
+}
+.result .btn{
+  width: 120px;
+  height: 120px;
+  font-family: PingFangTC-Regular;
+  font-size: 24px;
+  color: #424242;
+  background: #FFD366;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+}
+.result a{
+  display: block;
+  text-decoration: none; 
+  overflow: hidden;   
+}
+.mid .record-title{
+  font-family: SFNSDisplay;
+  font-size: 24px;
+  color: #424242;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 36px;  
+}
+.list li{
+  width: 624px;
+  height: 62px;
+  margin: 0 auto;
+  border-left: 7px solid #86D73F;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.shadow1{
+  box-shadow: 2px 0 3px 0 rgba(133,215,63,0.29);
+}
+.shadow2{
+  box-shadow: 2px 0 3px 0 rgba(49,186,249,0.29);
+}
+.shadow3{
+  box-shadow: 2px 0 3px 0 rgba(255,152,45,0.29);
+}
+.shadow4{
+  box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
+}
+.shadow5{
+  box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
+}
+.shadow6{
+  box-shadow: 2px 0 3px 0 rgba(255,18,0,0.29);
+}
+.list li .fa-trash-alt{
+  line-height: 62px;
+  padding: 0 5px;
+}
+.box-value{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+  line-height: 62px;
+}
+.show{
+  font-family: SFNSDisplay;
+  font-size: 20px;
+  color: #4A4A4A;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+.list li .text-value{
+  font-size: 12px;
+  color: #424242;
+  text-align: center;
+  display: flex;  
+  justify-content: space-between;
+}
+.list li .text-value span{
+  margin-right: 7px;
+}
+.list li .text-value a{
+  font-family: AppleSystemUIFont;
+  font-size: 20px;
+  color: #424242;
+}
+.bottom{
+  height: 90px;
+  background: #FFD366;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom img{
+  width: 55px;
+  height: 55px;
+  filter:invert(100%)
+}
+
+/* 文字顏色變化 */
+.bmi-value{
+  color: #424242;
+  font-family: AppleSystemUIFont;
+  position: absolute;
+  top: 65%;
+  left: 18%;
+  font-size: 50px;
+}
+
+/* 健康狀況 */
+.posture{
+  font-family: SFNSDisplay;
+  font-size: 32px;
+  margin-top: 45px;
+  margin-left: 10px;
+}
+
+/* 列表顏色 */
+#color1{
+  border-left: 7px solid #86D73E;
+}
+#color2{
+  border-left: 7px solid #31BAF9;
+}
+#color3{
+  border-left: 7px solid #FF982D;
+}
+#color4{
+  border-left: 7px solid #FF6C02;
+}
+#color5{
+  border-left: 7px solid #FF6C02;
+}
+#color6{
+  border-left: 7px solid #FF1200;
+}
+
+.green .btn {
+  border: 6px solid #86D73E;
+  color: #86D73E;
+  background-color: #424242;
+}
+.green .btn .number-color{
+  color: #86D73F;
+  font-size: 50px;
+}
+.green .bmi-value {
+  color: #86D73E;
+}
+.green .img {
+  background-color: #86D73E;
+}
+.green .img:hover {
+  cursor: pointer;
+}
+.green .posture {
+  color: #86D73E;
+}
+
+.blue .btn {
+  border: 6px solid #31BAF9;
+  color: #31BAF9;
+  background-color: #424242;
+}
+.blue .btn .number-color{
+  color: #31BAF9;
+  font-size: 50px;
+}
+.blue .bmi-value {
+  color: #31BAF9;
+}
+.blue .img {
+  background-color: #31BAF9;
+}
+.blue .img:hover {
+  cursor: pointer;
+}
+.blue .posture {
+  color: #31BAF9;
+}
+
+.orange .btn {
+  border: 6px solid #FF982D;
+  color: #FF982D;
+  background-color: #424242;
+}
+.orange .btn .number-color{
+  color: #FF982D;
+  font-size: 50px;
+}
+.orange .bmi-value {
+  color: #FF982D;
+}
+.orange .img {
+  background-color: #FF982D;
+}
+.orange .img:hover {
+  cursor: pointer;
+}
+.orange .posture {
+  color: #FF982D;
+}
+
+.dark .btn {
+  border: 6px solid #FF6C02;
+  color: #FF6C02;
+  background-color: #424242;
+}
+.dark .btn .number-color{
+  color: #FF6C02;
+  font-size: 50px;
+}
+.dark .bmi-value {
+  color: #FF6C02;
+}
+.dark .img {
+  background-color: #FF6C02;
+}
+.dark .img:hover {
+  cursor: pointer;
+}
+.dark .posture {
+  color: #FF6C02;
+}
+
+.dark2 .btn {
+  border: 6px solid #FF6C02;
+  color: #FF6C02;
+  background-color: #424242;
+}
+.dark2 .btn .number-color{
+  color: #FF6C02;
+  font-size: 50px;
+}
+.dark2 .bmi-value {
+  color: #FF6C02;
+}
+.dark2 .img {
+  background-color: #FF6C02;
+}
+.dark2 .img:hover {
+  cursor: pointer;
+}
+.dark2 .posture {
+  color: #FF6C02;
+}
+
+.red .btn {
+  border: 6px solid #FF1200;
+  color: #FF1200;
+  background-color: #424242;
+}
+.red .btn .number-color{
+  color: #FF1200;
+  font-size: 50px;
+}
+.red .bmi-value {
+  color: #FF1200;
+}
+.red .img {
+  background-color: #FF1200;
+}
+.red .img:hover {
+  cursor: pointer;
+}
+.red .posture {
+  color: #FF1200;
+}
+
+.img {
+  background-image: url(https://img.onl/wbWqGD);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 75%;
+  left: 33%;
+}
+
+/* 刪除資料 */
+.mid input[type=button]{
+  width: 100px;
+  height: 50px;
+  background: green;
+  color: white;
+  position: relative;
+  top:-75px;
+  left: 80%;
+}
+.mid input[type=button]:hover{
+  cursor: pointer;
+}
